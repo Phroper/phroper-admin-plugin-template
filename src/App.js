@@ -1,6 +1,6 @@
+import { Text } from "@chakra-ui/react";
 import React from "react";
-import { Title } from "./components/Title";
 
-export const App = ({ name = "World" }) => {
-  return <Title>Hello {name}!</Title>;
+export const App = ({ name = "World", ...props }) => {
+  return <Text {...props}>Hello {name}!</Text>;
 };
