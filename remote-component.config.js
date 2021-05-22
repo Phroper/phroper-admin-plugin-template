@@ -1,10 +1,21 @@
 /**
  * Dependencies for Remote Components
  */
-
 module.exports = {
   resolve: {
     react: require("react"),
-    "@chakra-ui/react": require("@chakra-ui/react")
-  }
+    axios: require("axios"),
+    formik: require("formik"),
+    moment: require("moment"),
+    yup: require("yup"),
+    "phroper-admin": {},
+    "framer-motion": require("framer-motion"),
+    "react-datepicker": require("react-datepicker"),
+    "react-dom": require("react-dom"),
+    "react-router-dom": require("react-router-dom"),
+    "@chakra-ui/react": require("@chakra-ui/react"),
+    "@chakra-ui/icons": require("@chakra-ui/icons"),
+    "@emotion/react": require("@emotion/react"),
+    "@emotion/styled": require("@emotion/styled"),
+  },
 };

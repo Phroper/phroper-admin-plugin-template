@@ -1,6 +1,7 @@
-/**
- * Entrypoint of the Remote Component.
- */
-import { App } from "./App";
+import { usePluginRegister } from "phroper-admin";
+import plugin from "./plugin";
 
-export default App;
+export default function Plugin() {
+  usePluginRegister(plugin);
+  return null;
+}
