@@ -16,7 +16,8 @@
     "test": "echo no tests",
     "test:changed": "npm run test -- --changedSince HEAD",
     "test:coverage": "npm run test -- --coverage",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "watch": "npm run clean && cross-env NODE_ENV=development webpack --mode development --watch"
   },
   "dependencies": {
     "@chakra-ui/icons": "^1.0.13",
